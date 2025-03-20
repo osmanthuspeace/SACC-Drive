@@ -9,7 +9,7 @@ const Router = () => {
   const routes = createBrowserRouter([
     {
       path: '/',
-      element: <Navigate to="/login" replace={true}/>,
+      element: <Navigate to="/home" replace={true}/>,
     },
     {
       path: '/login',

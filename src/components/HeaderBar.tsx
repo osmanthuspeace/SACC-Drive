@@ -1,6 +1,6 @@
 import BreadcrumbNavigator from '@/components/BreadcrumbNavigator.tsx';
 import style from "./styles/HeaderBar.module.scss";
-import ActionArea from "./ActionArea.tsx";
+import ActionArea from "./ActionArea/ActionArea.tsx";
 
 const HeaderBar = () => {
   return (

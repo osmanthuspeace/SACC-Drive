@@ -6,7 +6,7 @@ export interface FileListData {
   pageSize: number;
 }
 
-export interface FileListItem {
+export interface DisplayFile {
   id: number;
   filePid: string;
   fileName: string;
@@ -21,7 +21,7 @@ export interface FileListItem {
 
 export interface FileListRes {
   total: number;
-  records: FileListItem[];
+  records: DisplayFile[];
 }
 
 export interface FolderDataInBreadcrumb {

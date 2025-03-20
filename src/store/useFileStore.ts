@@ -1,13 +1,13 @@
 import {create} from "zustand";
 
-interface fileModule {
+interface FileStore {
   filePid: string,
   fileMd5: string,
   setFilePid: (filePid: string) => void
   setFileMd5: (fileMd5: string) => void
 }
 
-const useFileStore = create<fileModule>(
+const useFileStore = create<FileStore>(
   set => ({
     filePid: '',
     fileMd5: '',

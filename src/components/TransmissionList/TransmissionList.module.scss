@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  overflow: auto; /* 自动显示滚动条 */
+  align-items: stretch;
+}
+
+.left {
+  padding: 10px 10px;
+  white-space: nowrap;
+
+  .text {
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    &:hover {
+      color: rgb(95, 174, 249);
+      background-color: rgb(240, 249, 253);
+      cursor: pointer;
+    }
+  }
+}
+
+.middle {
+  width: 1px;
+  background-color: #cccccc;
+}
+
+.right {
+  height: auto;
+  width: 100%;
+  overflow: auto; //完整的显示中间的分割线所必须
+
+  .title {
+    padding: 8px 0 8px 10px;
+    display: block;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    background-color: whitesmoke;
+  }
+
+  .boundary {
+    height: 1px;
+    background-color: #cccccc;
+  }
+
+  .display {
+    height: 60px;
+    display: flex;
+    overflow: auto;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      display: inline;
+    }
+
+    .info {
+      padding: 0 20px 0 0;
+      width: 400px;
+
+      .name {
+        overflow: auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .state {
+        text-align: center;
+      }
+    }
+
+    .operate {
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+      align-items: center;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.frame {
+  padding: 0 16px;
+  transition: all 0.3s ease;
+  background: #fff;
+
+  &:hover {
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #40a9ff;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+
+  .name {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .status {
+    margin-right: 8px;
+  }
+
+  .size {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 12px;
+  }
+}
+
+.operate {
+  flex-shrink: 0;
+  button {
+    margin-left: 8px !important;
+  }
+}
+
+.divider {
+  margin: 8px 0;
+  background: #f0f0f0;
+}

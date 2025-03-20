@@ -1,7 +1,7 @@
 import {Breadcrumb, ConfigProvider} from "antd";
 import style from "./styles/BreadcrumbNavigator.module.scss";
 import {useNavigate} from "react-router-dom";
-import useBreadcrumbStore from "@/store/breadcrumbStore.ts";
+import useBreadcrumbStore from "@/store/usebreadcrumbStore";
 import {useEffect} from "react";
 import {FolderDataInBreadcrumb} from "@/types";
 
